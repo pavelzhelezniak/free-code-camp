@@ -13,3 +13,8 @@ var myName;
 
 var a;
 a = 7;
+
+// 4 task. Assign the contents of a to variable b.
+
+var b;
+b = a;
