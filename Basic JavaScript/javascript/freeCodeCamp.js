@@ -180,14 +180,25 @@ myStr += 'This is the second sentence.'
 var myName = 'Pavel';
 var myStr = 'My name is ' + myName + 'and I am well!';
 
+// 29 task. Set someAdjective to a string of at least 3 characters and append it to myStr using the += operator.
 
+var someAdjective = 'cool';
+var myStr = "Learning to code is ";
+myStr += someAdjective;
 
+// 30 task. Use the .length property to count the number of characters in the lastName variable and assign it to lastNameLength.
 
+var lastNameLength = 0;
+var lastName = "Lovelace";
+// lastNameLength = lastName;
 
+lastNameLength = lastName.length;
 
+// 31 task. Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
 
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+// firstLetterOfLastName = lastName;
 
-
-
-
+firstLetterOfLastName = lastName[0];
 
