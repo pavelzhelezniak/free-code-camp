@@ -50,7 +50,7 @@ titleCaseOver = 9000;
 
 var sum = 10 + 10;
 
+// 9 task. Change the 0 so the difference is 12. (var difference = 45 - 0;)
 
-
-
+var difference = 45 - 33;
 
