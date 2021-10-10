@@ -212,7 +212,7 @@ myStr = "Hello World";
 
 var lastName = "Lovelace";
 //var thirdLetterOfLastName = lastName;
-var thirdLetterOfLastName = lastName[2];
+var thirdLetterOfLastName = lastName[2];//33
 
 
 
