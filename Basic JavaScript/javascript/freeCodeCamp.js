@@ -220,10 +220,11 @@ var lastName = "Lovelace";
 //var lastLetterOfLastName = lastName;
 var lastLetterOfLastName = lastName[lastName.length - 1];
 
+// 35 task. Use bracket notation to find the second-to-last character in the lastName string.
 
-
-
-
+var lastName = "Lovelace";
+//var secondToLastLetterOfLastName = lastName; 
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
 
 
 
