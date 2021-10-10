@@ -208,8 +208,11 @@ var myStr = "Jello World";
 //myStr[0] = "H";
 myStr = "Hello World";
 
+// 33 task. Let's try to set thirdLetterOfLastName to equal the third letter of the lastName variable using bracket notation.
 
-
+var lastName = "Lovelace";
+//var thirdLetterOfLastName = lastName;
+var thirdLetterOfLastName = lastName[2];
 
 
 
