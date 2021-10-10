@@ -239,6 +239,29 @@ var wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb;
 
 var myArray = ['Pavel', 19];
 
+//38 task. Create a nested array called myArray.
+
+//var myArray = [];
+var myArray = [['Pavel']];
+
+//39 task. Create a variable called myData and set it to equal the first value of myArray using bracket notation.
+
+var myArray = [50, 60, 70];
+var myData = myArray[0];
+
+//40 task. Modify the data stored at index 0 of myArray to a value of 45.
+
+var myArray = [18, 64, 99];
+myArray[0] = 45;
+
+
+
+
+
+
+
+
+
 
 
 
