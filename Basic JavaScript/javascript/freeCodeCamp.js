@@ -235,9 +235,9 @@ var myAdverb = "quickly";
 //var wordBlanks = "";
 var wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb;
 
+//37 task. Modify the new array myArray so that it contains both a string and a number(in that order).
 
-
-
+var myArray = ['Pavel', 19];
 
 
 
