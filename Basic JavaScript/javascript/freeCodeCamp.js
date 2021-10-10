@@ -214,8 +214,11 @@ var lastName = "Lovelace";
 //var thirdLetterOfLastName = lastName;
 var thirdLetterOfLastName = lastName[2];//33
 
+// 34 task. Use bracket notation to find the last character in the lastName variable.
 
-
+var lastName = "Lovelace";
+//var lastLetterOfLastName = lastName;
+var lastLetterOfLastName = lastName[lastName.length - 1];
 
 
 
