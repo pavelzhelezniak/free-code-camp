@@ -285,6 +285,18 @@ myArray.unshift(["Paul", 35]);
 
 var myList = [["Candy", 10], ["Sausage", 11], ["Eggs", 12], ["Orange", 13], ["Ice cream", 15]];
 
+//47 task. Create a function called reusableFunction which prints the string Hi World to the dev console. Call the function.
+
+function reusableFunction() {
+	console.log("Hi World");
+}
+reusableFunction();
+
+
+
+
+
+
 
 
 
