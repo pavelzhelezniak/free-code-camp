@@ -267,11 +267,19 @@ myArray.push(["dog", 3]);
 //43 task. Use the .pop() function to remove the last item from myArray, assigning the popped off value to removedFromMyArray.
 
 var myArray = [["John", 23], ["cat", 2]];
-
-// Only change code below this line
 var removedFromMyArray = myArray.pop();
 
+//44 task. Use the .shift() function to remove the first item from myArray, assigning the "shifted off" value to removedFromMyArray.
 
+var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();
+
+
+//45 task. Add ["Paul",35] to the beginning of the myArray variable using unshift().
+
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
 
 
 
