@@ -281,9 +281,9 @@ var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(["Paul", 35]);
 
+//46 task. There should be at least 5 sub-arrays in the list.
 
-
-
+var myList = [["Candy", 10], ["Sausage", 11], ["Eggs", 12], ["Orange", 13], ["Ice cream", 15]];
 
 
 
