@@ -380,3 +380,11 @@ function nextInLine(arr, item) {
 }
 
 var testArr = [1, 2, 3, 4, 5];
+
+//56 task. Modify the welcomeToBooleans function so that it returns true instead of false when the run button is clicked.
+
+function welcomeToBooleans() {
+
+	return true;
+
+}
