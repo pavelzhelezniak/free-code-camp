@@ -340,12 +340,23 @@ function myOutfit() {
 
 myOutfit();
 
-//51 task. Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+//52 task. Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
 
 function timesFive(num) {
 	return num * 5;
 }
 
+//53 task. Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined.
 
+var sum = 0;
 
+function addThree() {
+	sum = sum + 3;
+}
 
+function addFive() {
+	sum = sum + 5;
+}
+
+addThree();
+addFive();
