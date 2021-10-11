@@ -299,7 +299,7 @@ function functionWithArgs(firstParam, secondParam) {
 }
 functionWithArgs(3, 4);
 
-//49 Using var, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10. Inside function fun1, assign 5 to oopsGlobal without using the var keyword.
+//49 task. Using var, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10. Inside function fun1, assign 5 to oopsGlobal without using the var keyword.
 
 var myGlobal = 10;
 
@@ -317,3 +317,14 @@ function fun2() {
 	}
 	console.log(output);
 }
+
+//50 task. The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
+
+// Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail.
+
+function myLocalScope() {
+	var myVar;
+	console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);
