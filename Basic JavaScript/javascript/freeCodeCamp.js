@@ -1081,9 +1081,15 @@ function multiplyAll(arr) {
 
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
+//100 task. Iterate with JavaScript Do...While Loops
 
-
-
+var myArray = [];
+var i = 10;
+do {
+	myArray.push(i);
+	i++;
+}
+while (i < 11)
 
 
 
