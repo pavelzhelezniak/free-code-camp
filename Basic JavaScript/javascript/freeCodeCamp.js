@@ -401,7 +401,7 @@ function trueOrFalse(wasThatTrue) {
 //58 task. Add the equality operator to the indicated line so that the function will return the string Equal when val is equivalent to 12.
 
 function testEqual(val) {
-	if (val == 12) { // Change this line
+	if (val == 12) {
 		return "Equal";
 	}
 	return "Not Equal";
@@ -412,7 +412,7 @@ testEqual(10);
 //59 task. Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7
 
 function testStrict(val) {
-	if (val === 7) { // Change this line
+	if (val === 7) {
 		return "Equal";
 	}
 	return "Not Equal";
@@ -423,7 +423,7 @@ testStrict(10);
 //60 task. The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal.
 
 function compareEquality(a, b) {
-	if (a == b) { // Change this line
+	if (a == b) {
 		return "Equal";
 	}
 	return "Not Equal";
@@ -434,7 +434,7 @@ compareEquality(10, "10");
 //61 task. Add the inequality operator != in the if statement so that the function will return the string Not Equal when val is not equivalent to 99
 
 function testNotEqual(val) {
-	if (val != 99) { // Change this line
+	if (val != 99) {
 		return "Not Equal";
 	}
 	return "Equal";
@@ -445,7 +445,7 @@ testNotEqual(10);
 //62 task. Add the strict inequality operator to the if statement so the function will return the string Not Equal when val is not strictly equal to 17
 
 function testStrictNotEqual(val) {
-	if (val !== 17) { // Change this line
+	if (val !== 17) {
 		return "Not Equal";
 	}
 	return "Equal";
@@ -456,11 +456,11 @@ testStrictNotEqual(10);
 //63 task. Add the greater than operator to the indicated lines so that the return statements make sense.
 
 function testGreaterThan(val) {
-	if (val > 100) {  // Change this line
+	if (val > 100) {
 		return "Over 100";
 	}
 
-	if (val > 10) {  // Change this line
+	if (val > 10) {
 		return "Over 10";
 	}
 
@@ -472,11 +472,11 @@ testGreaterThan(10);
 //64 task. Add the greater than or equal to operator to the indicated lines so that the return statements make sense.
 
 function testGreaterOrEqual(val) {
-	if (val >= 20) {  // Change this line
+	if (val >= 20) {
 		return "20 or Over";
 	}
 
-	if (val >= 10) {  // Change this line
+	if (val >= 10) {
 		return "10 or Over";
 	}
 
@@ -488,11 +488,11 @@ testGreaterOrEqual(10);
 //65 task. Add the less than operator to the indicated lines so that the return statements make sense.
 
 function testLessThan(val) {
-	if (val < 25) {  // Change this line
+	if (val < 25) {
 		return "Under 25";
 	}
 
-	if (val < 55) {  // Change this line
+	if (val < 55) {
 		return "Under 55";
 	}
 
@@ -504,11 +504,11 @@ testLessThan(10);
 //66 task. Add the less than or equal to operator to the indicated lines so that the return statements make sense.
 
 function testLessOrEqual(val) {
-	if (val <= 12) {  // Change this line
+	if (val <= 12) {
 		return "Smaller Than or Equal to 12";
 	}
 
-	if (val <= 24) {  // Change this line
+	if (val <= 24) {
 		return "Smaller Than or Equal to 24";
 	}
 
@@ -547,7 +547,6 @@ testLogicalOr(15);
 
 function testElse(val) {
 	var result = "";
-	// Only change code below this line
 
 	if (val > 5) {
 		result = "Bigger than 5";
@@ -555,7 +554,6 @@ function testElse(val) {
 		result = "5 or Smaller";
 	}
 
-	// Only change code above this line
 	return result;
 }
 
@@ -597,7 +595,7 @@ orderMyLogic(7);
 // num >= 20 - return Huge
 
 function testSize(num) {
-	// Only change code below this line
+
 	if (num < 5) {
 		return 'Tiny';
 	} else if (num < 10) {
@@ -611,7 +609,7 @@ function testSize(num) {
 	}
 
 	return "Change Me";
-	// Only change code above this line
+
 }
 
 testSize(7);
@@ -621,7 +619,7 @@ testSize(7);
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 
 function golfScore(par, strokes) {
-	// Only change code below this line
+
 	if (strokes == 1) {
 		return names[0];
 	} else if (strokes <= par - 2) {
@@ -638,7 +636,7 @@ function golfScore(par, strokes) {
 		return names[6];
 	}
 	return "Change Me";
-	// Only change code above this line
+
 }
 
 golfScore(5, 4);
@@ -661,8 +659,7 @@ function caseInSwitch(val) {
 			answer = "delta";
 			break;
 	}
-	// Only change code below this line
-	// Only change code above this line
+
 	return answer;
 }
 
@@ -672,7 +669,7 @@ caseInSwitch(1);
 
 function switchOfStuff(val) {
 	var answer = "";
-	// Only change code below this line
+
 	switch (val) {
 		case 'a':
 			answer = "apple";
@@ -687,7 +684,7 @@ function switchOfStuff(val) {
 			answer = "stuff";
 			break;
 	}
-	// Only change code above this line
+
 	return answer;
 }
 
@@ -697,7 +694,7 @@ switchOfStuff(1);
 
 function sequentialSizes(val) {
 	var answer = "";
-	// Only change code below this line
+
 	switch (val) {
 		case 1:
 		case 2:
@@ -715,7 +712,7 @@ function sequentialSizes(val) {
 			answer = "High";
 			break;
 	}
-	// Only change code above this line
+
 	return answer;
 }
 
@@ -744,7 +741,7 @@ function chainToSwitch(val) {
 			break;
 	}
 
-	// Only change code above this line
+
 	return answer;
 }
 
@@ -753,9 +750,9 @@ chainToSwitch(7);
 //78 task. Returning Boolean Values from Functions
 
 function isLess(a, b) {
-	// Only change code below this line
+
 	return a < b;
-	// Only change code above this line
+
 }
 
 isLess(10, 15);
@@ -764,11 +761,11 @@ isLess(10, 15);
 
 // Setup
 function abTest(a, b) {
-	// Only change code below this line
+
 	if (a < 0 || b < 0) {
 		return undefined;
 	}
-	// Only change code above this line
+
 	return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 
@@ -779,7 +776,7 @@ abTest(2, 2);
 var count = 0;
 
 function cc(card) {
-	// Only change code below this line
+
 	switch (card) {
 		case 2:
 		case 3:
@@ -805,7 +802,7 @@ function cc(card) {
 		return count + ' ' + 'Hold';
 	}
 	return "Change Me";
-	// Only change code above this line
+
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
@@ -813,12 +810,12 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 //81 task. Build JavaScript Objects
 
 var myDog = {
-	// Only change code below this line
+
 	name: 'Jeck',
 	legs: 4,
 	tails: 1,
 	friends: ['Pit', 'Alpha']
-	// Only change code above this line
+
 };
 
 //82 task. Accessing Object Properties with Dot Notation
@@ -829,5 +826,47 @@ var testObj = {
 	"shoes": "cleats"
 };
 
-var hatValue = testObj.hat;      // Change this line
-var shirtValue = testObj.shirt;    // Change this line
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+
+//83 task. Accessing Object Properties with Bracket Notation
+
+var testObj = {
+	"an entree": "hamburger",
+	"my side": "veggies",
+	"the drink": "water"
+};
+
+var entreeValue = testObj['an entree'];
+var drinkValue = testObj['the drink'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
