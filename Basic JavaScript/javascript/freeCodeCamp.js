@@ -1043,9 +1043,12 @@ for (var i = 1; i <= 5; i++) {
 	myArray.push(i);
 }
 
+//96 task. Iterate Odd Numbers With a For Loop
 
-
-
+var myArray = [];
+for (var i = 1; i < 10; i += 2) {
+	myArray.push(i);
+}
 
 
 
