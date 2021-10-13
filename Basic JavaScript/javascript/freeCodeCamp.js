@@ -1050,7 +1050,10 @@ for (var i = 1; i < 10; i += 2) {
 	myArray.push(i);
 }
 
+//97 task. Count Backwards With a For Loop
 
-
-
+var myArray = [];
+for (var i = 9; i > 0; i -= 2) {
+	myArray.push(i);
+}
 
