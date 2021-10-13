@@ -885,9 +885,27 @@ var myDog = {
 
 delete myDog.tails
 
+//88 task. Using Objects for Lookups
 
+function phoneticLookup(val) {
+	var result = "";
 
+	const lookup = {
+		alpha: "Adams",
+		bravo: "Boston",
+		charlie: "Chicago",
+		delta: "Denver",
+		echo: "Easy",
+		foxtrot: "Frank",
+	};
 
+	var value = val;
+	result = lookup[value];
+
+	return result;
+}
+
+phoneticLookup("charlie");
 
 
 
