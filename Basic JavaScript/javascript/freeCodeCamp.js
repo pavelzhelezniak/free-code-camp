@@ -810,7 +810,14 @@ function cc(card) {
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
+//81 task. Build JavaScript Objects
 
-
-
+var myDog = {
+	// Only change code below this line
+	name: 'Jeck',
+	legs: 4,
+	tails: 1,
+	friends: ['Pit', 'Alpha']
+	// Only change code above this line
+};
 
