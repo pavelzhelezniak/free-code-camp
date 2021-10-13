@@ -821,3 +821,13 @@ var myDog = {
 	// Only change code above this line
 };
 
+//82 task. Accessing Object Properties with Dot Notation
+
+var testObj = {
+	"hat": "ballcap",
+	"shirt": "jersey",
+	"shoes": "cleats"
+};
+
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt;    // Change this line
