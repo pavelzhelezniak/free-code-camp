@@ -907,9 +907,16 @@ function phoneticLookup(val) {
 
 phoneticLookup("charlie");
 
+//89 task. Testing Objects for Properties
 
+function checkObj(obj, checkProp) {
 
+	if (obj.hasOwnProperty(checkProp)) {
+		return obj[checkProp];
+	}
+	return "Not Found";
 
+}
 
 
 
