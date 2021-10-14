@@ -1091,12 +1091,17 @@ do {
 }
 while (i < 11)
 
+//101 task. Replace Loops using Recursion
 
+function sum(arr, n) {
 
+	if (n <= 0) {
+		return 0;
+	} else {
+		return sum(arr, n - 1) + arr[n - 1];
+	}
 
-
-
-
+}
 
 
 
