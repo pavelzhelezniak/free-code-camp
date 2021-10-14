@@ -68,9 +68,9 @@ function freezeObj() {
 }
 const PI = freezeObj();
 
+// 6 task. Use Arrow Functions to Write Concise Anonymous Functions
 
-
-
+const magic = () => new Date();
 
 
 
