@@ -119,3 +119,14 @@ const HIGH_TEMPERATURES = {
 
 const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
 //Вы можете прочитать это как «получить значение user.nameи присвоить его новой переменной с именем userName» и так далее.Значением userNameбудет строка John Doe, а значением userAge - число 34.
+
+// 13 task. Use Destructuring Assignment to Assign Variables from Nested Objects
+
+const LOCAL_FORECAST = {
+	yesterday: { low: 61, high: 75 },
+	today: { low: 64, high: 77 },
+	tomorrow: { low: 68, high: 80 }
+};
+
+//  const { today: { low, high } } = LOCAL_FORECAST;
+const { today: { low: lowToday, high: highToday } } = LOCAL_FORECAST;
