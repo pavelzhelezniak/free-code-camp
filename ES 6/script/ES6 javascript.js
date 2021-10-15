@@ -109,4 +109,13 @@ const HIGH_TEMPERATURES = {
 
 const { today, tomorrow } = HIGH_TEMPERATURES;
 
+// 12 task. Use Destructuring Assignment to Assign Variables from Objects
 
+const HIGH_TEMPERATURES = {
+	yesterday: 75,
+	today: 77,
+	tomorrow: 80
+};
+
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+//Вы можете прочитать это как «получить значение user.nameи присвоить его новой переменной с именем userName» и так далее.Значением userNameбудет строка John Doe, а значением userAge - число 34.
