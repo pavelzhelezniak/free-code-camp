@@ -279,9 +279,11 @@ export default function subtract(x, y) {
 	return x - y;
 }
 
+// 27 task. Import a Default Export
 
+import subtract from "./math_functions.js";
 
-
+subtract(7, 4);
 
 
 
