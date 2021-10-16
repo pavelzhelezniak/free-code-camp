@@ -80,3 +80,15 @@ function spreadOut() {
 }
 
 console.log(spreadOut());
+
+// 10 task. Check For The Presence of an Element With indexOf()Passed
+
+function quickCheck(arr, elem) {
+	if (arr.indexOf(elem) != -1) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
