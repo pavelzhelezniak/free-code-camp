@@ -238,7 +238,13 @@ let temp = thermos.temperature; // 24.44 in Celsius
 thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
 
+// 22 task. Create a Module Script
 
+<html>
+	<body>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
 
 
 
