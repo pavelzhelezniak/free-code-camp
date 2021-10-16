@@ -120,3 +120,17 @@ let myNestedArray = [
 	['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
 	// Only change code above this line
 ];
+
+// 13 task. Add Key-Value Pairs to JavaScript Objects
+
+let foods = {
+	apples: 25,
+	oranges: 32,
+	plums: 28
+};
+
+foods['bananas'] = 13;
+foods['grapes'] = 35;
+foods['strawberries'] = 27;
+
+console.log(foods);
