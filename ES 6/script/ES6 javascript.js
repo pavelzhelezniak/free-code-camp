@@ -285,7 +285,9 @@ import subtract from "./math_functions.js";
 
 subtract(7, 4);
 
+// 28 task. Create a JavaScript Promise
 
+const makeServerRequest = new Promise((resolve, reject) => {
 
-
+});
 
