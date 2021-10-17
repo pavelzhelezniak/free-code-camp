@@ -1247,9 +1247,15 @@ console.log(rangeOfNumbers(7, 12))
 
 
 
+function highAndLow(numbers) {
+	let newArraynumbers = numbers.split(' ').filter((item) => item !== ' ').map((item) => +item);
+	let maxNumber = Math.max.apply(null, newArraynumbers)
+	let minNumber = Math.min.apply(null, newArraynumbers)
 
+	return `${maxNumber} ${minNumber}`
+}
 
-
+highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
 
 
 
