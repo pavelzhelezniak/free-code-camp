@@ -13,11 +13,17 @@ let result = waldoRegex.test(waldoIsHiding);
 // 3 task. Match a Literal String with Different Possibilities
 
 let petString = "James has a pet cat.";
-let petRegex = /dog|cat|bird|fish/; // Change this line
+let petRegex = /dog|cat|bird|fish/;
 let result = petRegex.test(petString);
 
 // 4 task. Ignore Case While Matching
 
 let myString = "freeCodeCamp";
-let fccRegex = /freecodecamp/i; // Change this line
+let fccRegex = /freecodecamp/i;
 let result = fccRegex.test(myString);
+
+// 5 task. Extract Matches
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/;
+let result = extractStr.match(codingRegex);
