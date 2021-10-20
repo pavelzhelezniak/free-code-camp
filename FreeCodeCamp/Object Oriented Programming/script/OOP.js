@@ -302,3 +302,13 @@ let glideMixin = function (obj) {
 
 glideMixin(bird);
 glideMixin(boat);
+
+// 24 task. Use Closure to Protect Properties Within an Object from Being Modified Externally
+
+function Bird() {
+	let weight = 15;
+	this.getWeight = function () {
+		return weight;
+	}
+
+}
