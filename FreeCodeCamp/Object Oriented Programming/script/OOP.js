@@ -71,3 +71,18 @@ function House(numBedrooms) {
 }
 let myHouse = new House(4);
 myHouse instanceof House;
+
+// 9 task. Understand Own Properties
+
+function Bird(name) {
+	this.name = name;
+	this.numLegs = 2;
+}
+
+let canary = new Bird("Tweety");
+let ownProps = [];
+for (let property in canary) {
+	if (canary.hasOwnProperty(property)) {
+		ownProps.push(property);
+	}
+}
