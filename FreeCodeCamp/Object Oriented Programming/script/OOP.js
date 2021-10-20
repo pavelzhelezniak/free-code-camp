@@ -240,7 +240,7 @@ function Dog() { }
 Dog.prototype = Object.create(Animal.prototype);
 let beagle = new Dog();
 
-// 20 Reset an Inherited Constructor Property
+// 20 task. Reset an Inherited Constructor Property
 
 function Animal() { }
 function Bird() { }
@@ -256,7 +256,7 @@ Dog.prototype.constructor = Dog;
 let duck = new Bird();
 let beagle = new Dog();
 
-// 21 Add Methods After Inheritance
+// 21 task. Add Methods After Inheritance
 
 function Animal() { }
 Animal.prototype.eat = function () { console.log("nom nom nom"); };
@@ -268,7 +268,7 @@ Dog.prototype.bark = function () { console.log("Woof!"); };
 
 let beagle = new Dog();
 
-// 22 Override Inherited Methods
+// 22 task. Override Inherited Methods
 
 function Bird() { }
 
@@ -281,3 +281,24 @@ Penguin.prototype.fly = function () { return "Alas, this is a flightless bird.";
 
 let penguin = new Penguin();
 console.log(penguin.fly());
+
+// 23 task. Use a Mixin to Add Common Behavior Between Unrelated Objects
+
+let bird = {
+	name: "Donald",
+	numLegs: 2
+};
+
+let boat = {
+	name: "Warrior",
+	type: "race-boat"
+};
+
+let glideMixin = function (obj) {
+	obj.glide = function () {
+		console.log("Glide, wooosh!");
+	}
+};
+
+glideMixin(bird);
+glideMixin(boat);
