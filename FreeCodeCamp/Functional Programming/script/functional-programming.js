@@ -16,7 +16,7 @@ const tea4TeamFCC = getTea(40);
 
 // 2 task. Understand Functional Programming Terminology
 
-const prepareGreenTea = () => 'greenTea';
+/* const prepareGreenTea = () => 'greenTea';
 const prepareBlackTea = () => 'blackTea';
 
 const getTea = (prepareTea, numOfCups) => {
@@ -31,7 +31,7 @@ const getTea = (prepareTea, numOfCups) => {
 
 const tea4GreenTeamFCC = getTea(prepareGreenTea, 27);
 const tea4BlackTeamFCC = getTea(prepareBlackTea, 13);
-console.log(tea4GreenTeamFCC, tea4BlackTeamFCC);
+console.log(tea4GreenTeamFCC, tea4BlackTeamFCC); */
 
 // 3 task. Understand the Hazards of Using Imperative Code
 
@@ -67,7 +67,7 @@ var finalTabs = socialWindow
 	.tabOpen() // Open a new tab for cat memes
 	.join(videoWindow.tabClose(2)) // Close third tab in video window, and join
 	.join(workWindow.tabClose(1).tabOpen());
-console.log(finalTabs.tabs);
+// console.log(finalTabs.tabs);
 
 // 4 task. Avoid Mutations and Side Effects Using Functional Programming
 
@@ -89,3 +89,34 @@ function incrementer(value) {
 	return value + 1;
 	// Only change code above this line
 }
+
+// 6 task. Refactor Global Variables Out of Functions
+
+// The global variable
+var bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+// Change code below this line
+function add(originalArray, bookName) {
+	var newArray = [...originalArray];
+	newArray.push(bookName);
+	return newArray;
+	// Change code above this line
+}
+// Change code below this line
+function remove(originalArray, bookName) {
+	var newArray = [...originalArray];
+	var book_index = newArray.indexOf(bookName);
+	if (book_index >= 0) {
+
+		newArray.splice(book_index, 1);
+		return newArray;
+		// Change code above this line
+	}
+}
+
+var newBookList = add(bookList, 'A Brief History of Time');
+console.log(newBookList);
+var newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+console.log(newerBookList);
+var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+console.log(newestBookList);
+console.log(bookList);
