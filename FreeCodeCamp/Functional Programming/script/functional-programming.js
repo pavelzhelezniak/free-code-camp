@@ -414,3 +414,14 @@ var new_s = s.myFilter(function (item) {
 	return item % 2 === 1;
 });
 console.log(new_s)
+
+// 11 task. Return Part of an Array Using the slice Method
+
+function sliceArray(anim, beginSlice, endSlice) {
+	// Only change code below this line
+	var newAnim = anim.slice(beginSlice, endSlice);
+	return newAnim;
+	// Only change code above this line
+}
+var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+console.log(sliceArray(inputAnim, 1, 3));
