@@ -245,3 +245,22 @@ var ratings = watchList.map((item, index, array) => {
 } */
 // Only change code above this line
 console.log(JSON.stringify(ratings));
+
+// 8 task. Implement map on a Prototype
+
+var s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function (callback) {
+	var newArray = [];
+	// Only change code below this line
+	for (let i = 0; i < this.length; i++) {
+		newArray.push(callback(this[i], i, this))
+	}
+	// Only change code above this line
+	return newArray;
+};
+
+var new_s = s.myMap(function (item, index, array) {
+	return item * 2;
+});
+console.log(new_s)
