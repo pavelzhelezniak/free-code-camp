@@ -60,3 +60,25 @@ function destroyer(arr) {
 }
 
 console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+
+// 4 task. Wherefore art thou
+
+function whatIsInAName(collection, source) {
+
+	var sourceKeys = Object.keys(source)
+	var newArr = collection.filter(function (object) {
+
+		for (var i = 0; i < sourceKeys.length; i++) {
+
+			if (!object.hasOwnProperty(sourceKeys[i]) || object[sourceKeys[i]] !== source[sourceKeys[i]]) {
+				return false;
+			}
+
+		}
+		return true;
+	})
+
+	return newArr;
+}
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
