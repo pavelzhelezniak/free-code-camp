@@ -40,3 +40,18 @@ function diffArray(arr1, arr2) {
 }
 
 console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+// 3 task. Seek and Destroy
+
+function destroyer(arr) {
+	const argsArray = [...arguments];
+	const newArray = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (!argsArray.includes(arr[i])) {
+			newArray.push(arr[i])
+		}
+	}
+	return newArray;
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
