@@ -619,3 +619,13 @@ function nonMutatingSort(arr) {
 	// Only change code above this line
 }
 console.log(nonMutatingSort(globalArray));
+
+// 19 task. Split a String into an Array Using the split Method
+
+function splitify(str) {
+	// Only change code below this line
+	return str.split(/[^A-Za-z]/)
+
+	// Only change code above this line
+}
+console.log(splitify("Hello World,I-am code"));
