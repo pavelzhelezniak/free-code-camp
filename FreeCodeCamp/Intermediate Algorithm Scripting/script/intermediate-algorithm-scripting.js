@@ -82,3 +82,29 @@ function whatIsInAName(collection, source) {
 }
 
 console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
+
+// 5 task. Spinal Tap Case
+
+
+// 6 task. Pig Latin
+
+function translatePigLatin(str) {
+	let pigLatin = '';
+	let vowelRegEx = /[aeiou]/gi;
+	if (str[0].match(vowelRegEx)) {
+		pigLatin = str + 'way';
+	} else if (str.match(vowelRegEx) === null) {
+		// Check if the string contains only consonants
+		pigLatin = str + "ay";
+	} else {
+
+		var vowelIndice = str.indexOf(str.match(vowelRegEx)[0]);
+		pigLatin = str.substring(vowelIndice) + str.substring(0, vowelIndice) + "ay";
+
+	}
+
+	return pigLatin;
+}
+
+console.log(translatePigLatin("consonant"));
+console.log(translatePigLatin("oveglay"));
