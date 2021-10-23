@@ -597,3 +597,14 @@ const squareList = arr => {
 
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
+
+// 17 task. Sort an Array Alphabetically using the sort Method
+
+function alphabeticalOrder(arr) {
+	// Only change code below this line
+	return arr.sort(function (a, b) {
+		return a === b ? 0 : a > b ? 1 : -1;
+	});
+	// Only change code above this line
+}
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
