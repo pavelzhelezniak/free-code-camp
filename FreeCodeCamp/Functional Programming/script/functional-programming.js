@@ -639,3 +639,14 @@ function sentensify(str) {
 	// Only change code above this line
 }
 console.log(sentensify("May-the-force-be-with-you"));
+
+// 21 task. Apply Functional Programming to Convert Strings to URL Slugs
+
+// Only change code below this line
+function urlSlug(title) {
+
+	return title.trim().toLowerCase().split(' ').filter((item) => item !== '').join('-');
+
+}
+// Only change code above this line
+console.log(urlSlug(' Winter Is  Coming'))
