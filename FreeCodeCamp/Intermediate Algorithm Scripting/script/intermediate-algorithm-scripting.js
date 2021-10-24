@@ -108,3 +108,26 @@ function translatePigLatin(str) {
 
 console.log(translatePigLatin("consonant"));
 console.log(translatePigLatin("oveglay"));
+
+// 15 task. Drop it
+
+function dropElements(arr, func) {
+	var newArray;
+	for (let i = 0; i < arr.length; i++) {
+
+		if (func(arr[i])) {
+			newArray = arr.slice(i);
+			break;
+		} else if (!func(arr[arr.length - 1])) {
+			newArray = [];
+		} else if (!func(arr[i])) {
+			continue;
+		}
+
+	}
+	return newArray;
+}
+
+console.log(dropElements([1, 2, 3], function (n) { return n < 3; }));
+console.log(dropElements([0, 1, 0, 1], function (n) { return n === 1; }));
+console.log(dropElements([1, 2, 3, 4], function (n) { return n > 5; }));
