@@ -171,3 +171,29 @@ function truthCheck(collection, pre) {
 
 console.log(truthCheck([{ "user": "Tinky-Winky", "sex": "male" }, { "user": "Dipsy", "sex": "male" }, { "user": "Laa-Laa", "sex": "female" }, { "user": "Po", "sex": "female" }], "sex"));
 console.log(truthCheck([{ "user": "Tinky-Winky", "sex": "male", "age": 0 }, { "user": "Dipsy", "sex": "male", "age": 3 }, { "user": "Laa-Laa", "sex": "female", "age": 5 }, { "user": "Po", "sex": "female", "age": 4 }], "age"));
+
+// 19 task. Arguments Optional
+
+function addTogether() {
+	const [firstArgument, secondArgument] = arguments
+	if (typeof (firstArgument) !== 'number') {
+		return undefined;
+	}
+	else if (secondArgument === undefined) {
+		function addSecondArgument(secondArgument) {
+			if (typeof (secondArgument) !== 'number') {
+				return undefined;
+			} else {
+				return firstArgument + secondArgument;
+			}
+		}
+		return addSecondArgument;
+	} else if (typeof (secondArgument) !== 'number') {
+		return undefined;
+	} else {
+		return firstArgument + secondArgument;
+	}
+}
+
+console.log(addTogether(2, 3));
+console.log(addTogether("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
