@@ -131,3 +131,20 @@ function dropElements(arr, func) {
 console.log(dropElements([1, 2, 3], function (n) { return n < 3; }));
 console.log(dropElements([0, 1, 0, 1], function (n) { return n === 1; }));
 console.log(dropElements([1, 2, 3, 4], function (n) { return n > 5; }));
+
+// 16 task. Steamroller
+
+function steamrollArray(arr) {
+	const newArray = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (!Array.isArray(arr[i])) {
+			newArray.push(arr[i]);
+		} else {
+			newArray.push(...steamrollArray(arr[i]));
+			;
+		}
+	}
+	return newArray;
+}
+
+console.log(steamrollArray([1, [2], [3, [[4]]]]));
