@@ -197,3 +197,47 @@ function addTogether() {
 
 console.log(addTogether(2, 3));
 console.log(addTogether("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
+
+// 20 task. Make a Person
+
+var Person = function (firstAndLast) {
+	// Only change code below this line
+	// Complete the method below and implement the others similarly
+	var fullName = firstAndLast;
+
+	this.getFullName = function () {
+		return fullName;
+	};
+
+	this.getLastName = function () {
+		return fullName.split(' ')[1];
+	};
+
+	this.getFirstName = function () {
+		return fullName.split(' ')[0];
+	};
+
+	this.setFirstName = function (firstName) {
+		fullName = firstName + ' ' + fullName.split(' ')[1];
+	};
+
+	this.setLastName = function (lastName) {
+		fullName = fullName.split(' ')[0] + ' ' + lastName;
+	};
+
+	this.setFullName = function (firstAndLast) {
+		fullName = firstAndLast;
+	};
+
+};
+
+var bob = new Person('Bob Ross');
+console.log(bob.getFullName());
+bob.setFirstName("Haskell")
+console.log(bob.getFullName());
+bob.setLastName("Curry");
+console.log(bob.getFullName());
+bob.setFullName("Paval Zheleznyak");
+console.log(bob.getFullName());
+console.log(bob.getFirstName());
+console.log(bob.getLastName());
