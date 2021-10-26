@@ -241,3 +241,32 @@ bob.setFullName("Paval Zheleznyak");
 console.log(bob.getFullName());
 console.log(bob.getFirstName());
 console.log(bob.getLastName());
+
+// 21 task. Map the Debris
+
+function orbitalPeriod(arr) {
+
+	var GM = 398600.4418;
+	var earthRadius = 6367.4447;
+	var a = 2 * Math.PI;
+	var newArray = [];
+
+	var getOrbitalPeriod = function (object) {
+		var c = Math.pow(earthRadius + object.avgAlt, 3);
+		var b = Math.sqrt(c / GM);
+		var orbPeriod = Math.round(a * b);
+
+		return { name: object.name, orbitalPeriod: orbPeriod };
+
+	};
+
+	for (var element in arr) {
+
+		newArray.push(getOrbitalPeriod(arr[element]));
+
+	}
+
+	return newArray;
+}
+
+orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]);
