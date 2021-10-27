@@ -109,6 +109,28 @@ function translatePigLatin(str) {
 console.log(translatePigLatin("consonant"));
 console.log(translatePigLatin("oveglay"));
 
+// 13 task. Sum All Primes
+
+function sumPrimes(num) {
+	let startedNumber = 2;
+	let sum = 2;
+	while (startedNumber < num) {
+
+		startedNumber++;
+		for (let i = 2; i < startedNumber; i++) {
+			if (startedNumber % i === 0) {
+				break;
+			}
+			else if (i === startedNumber - 1) {
+				sum += startedNumber;
+			}
+		}
+	}
+	return sum;
+}
+
+console.log(sumPrimes(10));
+
 // 15 task. Drop it
 
 function dropElements(arr, func) {
