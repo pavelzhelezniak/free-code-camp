@@ -6,3 +6,11 @@ function convertToF(celsius) {
 }
 
 convertToF(30);
+
+// 2 task. Reverse a String
+
+function reverseString(str) {
+	return str.split('').reverse().join('');
+}
+
+reverseString("hello");
