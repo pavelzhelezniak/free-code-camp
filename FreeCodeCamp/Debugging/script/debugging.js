@@ -60,7 +60,7 @@ function getNine() {
 	return x + y;
 }
 
-let result = getNine();
+let results = getNine();
 console.log(result);
 
 // 9 task. Catch Arguments Passed in the Wrong Order When Calling a Function
