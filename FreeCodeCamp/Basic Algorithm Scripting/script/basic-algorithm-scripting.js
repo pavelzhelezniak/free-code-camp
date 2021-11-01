@@ -27,3 +27,10 @@ function factorialize(num) {
 
 console.log(factorialize(5));
 
+// 4 task. Find the Longest Word in a String
+
+function findLongestWordLength(str) {
+	return Math.max(...str.split(' ').map(item => item.length));
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
