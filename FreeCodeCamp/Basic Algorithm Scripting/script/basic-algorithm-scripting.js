@@ -14,3 +14,16 @@ function reverseString(str) {
 }
 
 reverseString("hello");
+
+// 3 task. Factorialize a Number
+
+function factorialize(num) {
+	if (num <= 1) {
+		return 1;
+	} else {
+		return num * factorialize(num - 1);
+	}
+}
+
+console.log(factorialize(5));
+
