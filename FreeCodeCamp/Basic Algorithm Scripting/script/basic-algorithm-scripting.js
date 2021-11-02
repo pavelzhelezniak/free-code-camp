@@ -34,3 +34,18 @@ function findLongestWordLength(str) {
 }
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+// 5 task. Return Largest Numbers in Arrays
+
+function largestOfFour(arr) {
+	const newArray = [];
+	for (let i = 0; i < arr.length; i++) {
+		for (let k = 0; k < arr[i].length; k++) {
+
+		}
+		newArray.push(Math.max(...arr[i]))
+	}
+	return newArray;
+}
+
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
