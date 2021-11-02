@@ -43,9 +43,22 @@ function largestOfFour(arr) {
 		for (let k = 0; k < arr[i].length; k++) {
 
 		}
-		newArray.push(Math.max(...arr[i]))
+		newArray.push(Math.max(...arr[i]));
 	}
 	return newArray;
 }
 
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
+// 6 task. Confirm the Ending
+
+function confirmEnding(str, target) {
+	const newStr = str.slice(-target.length);
+	if (newStr === target) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+confirmEnding("Bastian", "n");
