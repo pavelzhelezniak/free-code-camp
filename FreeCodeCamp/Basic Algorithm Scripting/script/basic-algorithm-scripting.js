@@ -132,3 +132,13 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+
+// 12 task. Title Case a Sentence
+
+function frankenSplice(arr1, arr2, n) {
+	const localArray = arr2.slice();
+	localArray.splice(n, 0, ...arr1);
+	return localArray;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
