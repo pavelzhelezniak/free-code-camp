@@ -142,3 +142,17 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+// 13 task. Falsy Bouncer
+
+function bouncer(arr) {
+	const newArr = [];
+	arr.forEach((item) => {
+		if (item) {
+			newArr.push(item);
+		}
+	});
+	return newArr;
+}
+
+bouncer([7, "ate", "", false, 9]);
