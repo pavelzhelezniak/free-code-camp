@@ -156,3 +156,14 @@ function bouncer(arr) {
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+// 14 task. Where do I Belong
+
+function getIndexToIns(arr, num) {
+
+	return arr.concat(num).sort((a, b) => a - b).indexOf(num);
+
+}
+
+getIndexToIns([40, 60], 50);
+
