@@ -167,3 +167,17 @@ function getIndexToIns(arr, num) {
 
 getIndexToIns([40, 60], 50);
 
+// 15 task. Where do I Belong
+
+function mutation(arr) {
+	let substr = arr[1].toLowerCase();
+	let newArr = arr[0].toLowerCase();
+	for (let i = 0; i < substr.length; i++) {
+		if (newArr.indexOf(substr[i]) < 0) {
+			return false;
+		}
+	}
+	return true;
+}
+
+mutation(["hello", "hey"]);
